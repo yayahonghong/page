@@ -2,8 +2,8 @@
     <section class="hero" id="home">
       <div class="hero-content">
         <h1>你好，我是<span class="highlight">[你的名字]</span></h1>
-        <h2>前端开发工程师 / UI设计师</h2>
-        <p>我专注于创建美观、响应式的网站和应用程序，致力于提供最佳用户体验。通过代码将创意变为现实是我的热情所在。</p>
+        <h2>CV工程师</h2>
+        <p>我专注于搬砖</p>
         <router-link to="#contact" class="btn">联系我</router-link>
         <div class="social-icons">
           <a href="#"><i class="fab fa-github"></i></a>
@@ -22,12 +22,15 @@
   </script>
   
   <style scoped>
-  .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 200px; /* 与左边界保持 50px 距离 */
+}
+
+
   
   .hero-content {
     max-width: 600px;

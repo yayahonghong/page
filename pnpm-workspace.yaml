@@ -1,3 +1,0 @@
-ignoredBuiltDependencies:
-  - '@tsparticles/engine'
-  - esbuild

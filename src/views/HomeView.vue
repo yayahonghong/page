@@ -7,7 +7,7 @@
       <BlogSection />
       <footer>
         <div class="container">
-          <p>&copy; 2023 [你的名字]. 保留所有权利.</p>
+          <p>&copy; 2025 [你的名字]. 保留所有权利.</p>
         </div>
       </footer>
     </div>

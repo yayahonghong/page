@@ -5,7 +5,7 @@
       </div>
       <div class="about-content">
         <div class="about-img">
-          <img src="https://via.placeholder.com/400x500" alt="个人照片" class="floating">
+          <img src="https://cdn.pixabay.com/photo/2025/01/17/01/56/horse-9338907_1280.jpg" alt="个人照片" class="floating">
         </div>
         <div class="about-text">
           <h3>专业前端开发人员</h3>
@@ -62,6 +62,8 @@
   
   <style scoped>
   .about-content {
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     align-items: center;
     gap: 3rem;
