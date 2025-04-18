@@ -26,10 +26,8 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 20;
-    pointer-events: none; /* 允许鼠标事件穿透 */
+    z-index: -1;
 }
-
 
 /* 导航栏 */
 nav {
@@ -103,6 +101,8 @@ nav.scrolled {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
+    position: relative;
+    z-index: 1;
 }
 
 /* 英雄区域 */
@@ -152,6 +152,8 @@ nav.scrolled {
     border: none;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+    position: relative;
+    z-index: 2;
 }
 
 .btn:hover {
@@ -163,6 +165,8 @@ nav.scrolled {
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .social-icons a {
@@ -179,6 +183,8 @@ nav.scrolled {
 /* 关于区域 */
 .section {
     padding: 6rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .section-title {
@@ -285,6 +291,8 @@ nav.scrolled {
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
 .project-card:hover {
@@ -347,6 +355,8 @@ nav.scrolled {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
 }
 
 .form-group {
@@ -388,6 +398,8 @@ footer {
     text-align: center;
     padding: 2rem 0;
     background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
 }
 
 footer p {
