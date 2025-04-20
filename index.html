@@ -285,7 +285,7 @@
 	// 确保PIXI全局可用
 	window.PIXI = PIXI;
 
-	const app = new PIXI.autoDetectRenderer({
+	const app = new PIXI.Application({
 		view: document.getElementById("live2d-canvas"),
 		transparent: true,
 		autoStart: true,
