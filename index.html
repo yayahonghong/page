@@ -290,7 +290,10 @@
 		transparent: true,
 		autoStart: true,
 		width: 300,
-		height: 300
+		height: 300,
+		antialias: true,          // 抗锯齿
+		resolution: 2,            // 2倍分辨率
+		autoDensity: true         // 自动适配DPI
 	});
 
 	PIXI.live2d.Live2DModel.from("./static/model/model.json").then(model => {
