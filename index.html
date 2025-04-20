@@ -271,8 +271,44 @@
 		</div>
 
 	</div>
+	<canvas id="live2d-canvas"></canvas>
 </body>
+
 <script src="./static/js/script.js"> </script>
 
+<script src="./static/js/pixi.min.js"></script>
+<script src="./static/js/live2d.min.js"></script>
+<script src="./static/js/pixi-live2d-display.min.js"></script>
+<script src="./static/model/model-data.js"></script>
+
+<script>
+	// 确保PIXI全局可用
+	window.PIXI = PIXI;
+
+	const app = new PIXI.autoDetectRenderer({
+		view: document.getElementById("live2d-canvas"),
+		transparent: true,
+		autoStart: true,
+		width: 300,
+		height: 300
+	});
+
+	PIXI.live2d.Live2DModel.from("./static/model/model.json").then(model => {
+		app.stage.addChild(model);
+		model.scale.set(0.2);
+		model.x = 150;
+		model.y = app.screen.height - model.height * 0.5;
+
+		// 点击交互
+		model.interactive = true;
+		model.on("pointerdown", () => {
+			model.motion("Tap");
+		});
+	})
+		.catch(error => {
+			console.error("加载失败:", error);
+			alert("Live2D 模型加载失败，请检查控制台！");
+		});
+</script>
 
 </html>
