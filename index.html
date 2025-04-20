@@ -295,9 +295,9 @@
 
 	PIXI.live2d.Live2DModel.from("./static/model/model.json").then(model => {
 		app.stage.addChild(model);
+		model.anchor.set(0.5, 1);
 		model.scale.set(0.2);
-		model.x = 150;
-		model.y = app.screen.height - model.height * 0.5;
+		model.position.set(150, app.screen.height);
 
 		// 点击交互
 		model.interactive = true;
